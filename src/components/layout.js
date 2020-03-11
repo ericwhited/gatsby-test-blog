@@ -13,11 +13,15 @@ import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  // data is the result of this query
   const data = useStaticQuery(graphql`
+  # query name
     query SiteTitleQuery {
+      # query itself
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
@@ -26,6 +30,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <h3>{data.site.siteMetadata.description}</h3>
       <div
         style={{
           margin: `0 auto`,
