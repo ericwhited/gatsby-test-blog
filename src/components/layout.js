@@ -10,13 +10,14 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Archive from './archive'
 import "./layout.css"
 
 const Layout = ({ children }) => {
   // data is the result of this query
   const data = useStaticQuery(graphql`
   # query name
-    query SiteTitleQuery {
+    query {
       # query itself
       site {
         siteMetadata {
@@ -39,6 +40,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <Archive />
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

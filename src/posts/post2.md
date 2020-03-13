@@ -1,10 +1,10 @@
 ---
-slug: "/first-post"
-date: "2020-03-12"
-title: "Our First Post"
+slug: "/second-post"
+date: "2020-03-21"
+title: "Our Second Post"
 ---
 
-# Hello
+# YO YOOOOO!
 
 I'm baby hexagon keytar offal, artisan palo santo hoodie church-key chartreuse ramps. Salvia fanny pack microdosing cred williamsburg lomo gastropub. Shoreditch pok pok williamsburg salvia meditation pork belly jean shorts XOXO. Semiotics pug freegan pork belly live-edge offal. Food truck pickled cardigan, bushwick literally skateboard authentic cred. Four loko you probably haven't heard of them plaid activated charcoal meh.
 
