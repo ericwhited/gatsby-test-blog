@@ -8,11 +8,19 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
+// This query grabs all of our MD files in the Posts folder.
+// putting the query into a variable to make things more clean
 const POST_ARCHIVE_QUERY = graphql`
 # query name
   query BlogPostArchive {
     # query itself
-      allMarkdownRemark {
+      # limits the posts to 5 and starts the sort
+      allMarkdownRemark(limit: 5, sort: {
+        # sets the order that posts are sorted IN
+        order: DESC,
+        # sets what the posts are ordered BY
+        fields: [frontmatter___date]
+      }) {
         edges{
           node {
             frontmatter {
